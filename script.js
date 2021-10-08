@@ -1,7 +1,5 @@
 'use strict';
 
-document.addEventListener("DOMContentLoaded", function(event) { 
-
 let planets = [
     {
       "name": "Mercury",
@@ -554,6 +552,4 @@ if (window.location.pathname == '/neptune.html') {
         neptuneGeology.style.display = "block";
     })
 
-}; 
-
-});
+};
