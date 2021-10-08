@@ -174,61 +174,15 @@ nav {
     padding: 0px;
 }
 
-/* Mercury Images */
+/* Geology Img */
 
-#mercury-geology {
-    position: absolute;
-    top: 62.3%;
-    width: 20%;
-    display: none;
-}
-
-/* Venus Images */
-
-#venus-geology {
-    position: absolute;
-    top: 62.3%;
-    width: 20%;
-    display: none;
-}
-
-/* Earth Images */
-
-#earth-geology {
-    position: absolute;
-    top: 62.3%;
-    width: 20%;
-    display: none;
-}
-
-#mars-geology {
-    position: absolute;
-    top: 62.3%;
-    width: 20%;
-    display: none;
-}
-
-#jupiter-geology {
-    position: absolute;
-    top: 62.3%;
-    width: 20%;
-    display: none;
-}
-
-#saturn-geology {
-    position: absolute;
-    top: 62.3%;
-    width: 20%;
-    display: none;
-}
-
-#uranus-geology {
-    position: absolute;
-    top: 62.3%;
-    width: 20%;
-    display: none;
-}
-
+#mercury-geology, 
+#venus-geology, 
+#earth-geology, 
+#mars-geology, 
+#jupiter-geology, 
+#saturn-geology, 
+#uranus-geology, 
 #neptune-geology {
     position: absolute;
     top: 62.3%;
