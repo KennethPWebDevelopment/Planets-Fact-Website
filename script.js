@@ -241,7 +241,7 @@ if (window.location.pathname == '/index.html' || window.location.pathname == '/P
 
 // Venus Buttons
 
-if (window.location.pathname == '/venus.html') {
+if (window.location.pathname == '/venus.html' || window.location.pathname == '/Planets-Fact-Website/venus.html') {
 
     let venusBtn1 = document.querySelector("#venus-btn1");
     let venusBtn2 = document.querySelector("#venus-btn2");
@@ -286,7 +286,7 @@ if (window.location.pathname == '/venus.html') {
 
 // Earth Buttons
 
-if (window.location.pathname == '/earth.html') {
+if (window.location.pathname == '/earth.html' || window.location.pathname == '/Planets-Fact-Website/earth.html') {
 
     let earthBtn1 = document.querySelector("#earth-btn1");
     let earthBtn2 = document.querySelector("#earth-btn2");
@@ -331,7 +331,7 @@ if (window.location.pathname == '/earth.html') {
 
 // Mars Buttons
 
-if (window.location.pathname == '/mars.html') {
+if (window.location.pathname == '/mars.html' || window.location.pathname == '/Planets-Fact-Website/mars.html') {
 
     let marsBtn1 = document.querySelector("#mars-btn1");
     let marsBtn2 = document.querySelector("#mars-btn2");
@@ -376,7 +376,7 @@ if (window.location.pathname == '/mars.html') {
 
 // Jupiter Buttons
 
-if (window.location.pathname == '/jupiter.html') {
+if (window.location.pathname == '/jupiter.html' || window.location.pathname == '/Planets-Fact-Website/jupiter.html') {
 
     let jupiterBtn1 = document.querySelector("#jupiter-btn1");
     let jupiterBtn2 = document.querySelector("#jupiter-btn2");
@@ -421,7 +421,7 @@ if (window.location.pathname == '/jupiter.html') {
 
 // Saturn Buttons
 
-if (window.location.pathname == '/saturn.html') {
+if (window.location.pathname == '/saturn.html' || window.location.pathname == '/Planets-Fact-Website/saturn.html') {
 
     let saturnBtn1 = document.querySelector("#saturn-btn1");
     let saturnBtn2 = document.querySelector("#saturn-btn2");
@@ -466,7 +466,7 @@ if (window.location.pathname == '/saturn.html') {
 
 // Uranus Buttons
 
-if (window.location.pathname == '/uranus.html') {
+if (window.location.pathname == '/uranus.html' || window.location.pathname == '/Planets-Fact-Website/uranus.html') {
 
     let uranusBtn1 = document.querySelector("#uranus-btn1");
     let uranusBtn2 = document.querySelector("#uranus-btn2");
@@ -511,7 +511,7 @@ if (window.location.pathname == '/uranus.html') {
 
 // Neptune Buttons
 
-if (window.location.pathname == '/neptune.html') {
+if (window.location.pathname == '/neptune.html' || window.location.pathname == '/Planets-Fact-Website/neptune.html') {
 
     let neptuneBtn1 = document.querySelector("#neptune-btn1");
     let neptuneBtn2 = document.querySelector("#neptune-btn2");
