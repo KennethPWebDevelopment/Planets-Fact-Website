@@ -1,0 +1,274 @@
+:root {
+    --white: #FFFFFF;
+    --black: #070724;
+    --dark-grey: #38384F;
+    --grey: #838391;
+    --teal: #419EBB;
+    --orange: #EDA249; 
+    --purple: #6f2ed6;
+    --light-red: #D14C32; 
+    --red: #D83A34;
+    --red-orange: #CD5120; 
+    --green: #1EC2A4; 
+    --blue: #2D68F0; 
+  }
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: white;
+    background-color: var(--black);
+    background-image: url(assets/background-stars.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Utilitie Classes */
+
+/* Containers */
+
+.container {
+    width: 75%;
+}
+
+/* Typography */
+
+h1,h2 {
+    font-family: 'Antonio', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin: 7rem 0rem 2rem 0rem;
+}
+
+h2 {
+    font-size: 40px;
+    letter-spacing: -1.5px;
+}
+
+h3, h4 {
+    font-weight: 700;
+    line-height: 25px;
+}
+
+h3 {
+    font-size: 12px; 
+    letter-spacing: 2.6px;
+}
+
+h4 {
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* Buttons */
+
+button {
+    padding: 0.8rem 2rem;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    background-color: var(--black);
+    color: white;
+    border: 1px solid var(--dark-grey) ;
+    width: 100%;
+    margin: 0.5rem 0rem;
+    letter-spacing: 0.2rem;
+}
+
+button:hover {
+    background-color: var(--dark-grey) !important;
+}
+
+/* Planet Buttons */
+
+#mercury-btn1 {
+    background-color: var(--teal);
+}
+
+#venus-btn1 {
+    background-color: var(--orange);
+}
+
+#earth-btn1 {
+    background-color: var(--purple);
+}
+
+#mars-btn1 {
+    background-color: var(--red-orange);
+}
+
+#jupiter-btn1 {
+    background-color: var(--red);
+}
+
+#saturn-btn1 {
+    background-color: var(--light-red);
+}
+
+#uranus-btn1 {
+    background-color: var(--green);
+}
+
+#neptune-btn1 {
+    background-color: var(--blue);
+}
+
+/* Nav */
+
+nav {
+    border-bottom: 1px solid var(--grey);
+}
+
+.navbar {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--grey);
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    color: var(--white); 
+    font-size: 40px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color: var(--grey);
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0em 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.navbar-brand:hover {
+    color: var(--white);
+}
+
+.nav-link:hover {
+    color: var(--white);
+}
+
+.nav-link:focus {
+    color: var(--white);
+}
+
+/* Images */
+
+#img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#source-img {
+    padding: 0px;
+}
+
+/* Mercury Images */
+
+#mercury-geology {
+    position: absolute;
+    top: 62.3%;
+    width: 20%;
+    display: none;
+}
+
+/* Venus Images */
+
+#venus-geology {
+    position: absolute;
+    top: 62.3%;
+    width: 20%;
+    display: none;
+}
+
+/* Earth Images */
+
+#earth-geology {
+    position: absolute;
+    top: 62.3%;
+    width: 20%;
+    display: none;
+}
+
+#mars-geology {
+    position: absolute;
+    top: 62.3%;
+    width: 20%;
+    display: none;
+}
+
+#jupiter-geology {
+    position: absolute;
+    top: 62.3%;
+    width: 20%;
+    display: none;
+}
+
+#saturn-geology {
+    position: absolute;
+    top: 62.3%;
+    width: 20%;
+    display: none;
+}
+
+#uranus-geology {
+    position: absolute;
+    top: 62.3%;
+    width: 20%;
+    display: none;
+}
+
+#neptune-geology {
+    position: absolute;
+    top: 62.3%;
+    width: 20%;
+    display: none;
+}
+
+/* Section 1 */
+
+#source {
+    color: var(--grey);
+}
+
+#wikipedia-link {
+    font-weight: 700;
+    color: var(--grey);
+}
+
+.numbers {
+    color: var(--grey);
+    margin-right: 1rem;
+}
+
+#cards-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.cards {
+    border: 1px solid var(--dark-grey);
+    width: 100%;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    margin: 0rem 0rem 0rem 1rem;
+    padding: 1rem;
+}
+
+.cards > p {
+    color: var(--grey);
+}

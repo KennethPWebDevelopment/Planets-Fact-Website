@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Planets fact site</title>
+</head>
+<body>
+
+  <!-- Nav -->
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <h2><a class="navbar-brand" href="#">the planets</a></h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">mercury</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="venus.html">venus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="earth.html">earth</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mars.html">mars</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jupiter.html">jupiter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="saturn.html">saturn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="uranus.html">uranus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="neptune.html">neptune</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section 1 -->
+
+  <div class="container">
+
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div id="img-div" class="col-lg-8">
+        <img id="uranus-img" src="assets/planet-uranus.svg" alt="uranus">
+        <img id= "uranus-geology" src="assets/geology-uranus.png" alt="uranus geology">
+      </div>
+      <div class="col-lg-4">
+        <h1>Uranus</h1>
+        <p id="uranus-text">Uranus is the seventh planet from the Sun. Its name is a reference to the 
+          Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather 
+          of Ares. It has the third-largest planetary radius and fourth-largest planetary 
+          mass in the Solar System.</p>
+          <p id="source">Source :<a id="wikipedia-link" href="https://en.wikipedia.org/wiki/Uranus_(planet)"> Wikipedia </a><img id="source-img" src="assets/icon-source.svg" alt=""></p>
+          <button id="uranus-btn1"><span class="numbers">01</span> Overview</button>
+          <button id="uranus-btn2"><span class="numbers">02</span> Internal Structure</button>
+          <button id="uranus-btn3"><span class="numbers">03</span> Surface Geology</button>
+      </div>
+    </div>
+
+    <!-- Facts Cards -->
+
+    <div id="cards-div">
+      <div class="cards">
+        <p>Rotation Time</p>
+        <h2>17.2 Hours</h2>
+      </div>
+    
+      <div class="cards">
+        <p>Revolution Time</p>
+        <h2>84 Years</h2>
+      </div>
+    
+      <div class="cards">
+        <p>Radius</p>
+        <h2>25,362 KM</h2>
+      </div>
+    
+      <div class="cards">
+        <p>Average Temp.</p>
+        <h2>-195°c</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <!-- Javascript File -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

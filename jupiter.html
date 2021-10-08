@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Planets fact site</title>
+</head>
+<body>
+
+  <!-- Nav -->
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <h2><a class="navbar-brand" href="#">the planets</a></h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">mercury</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="venus.html">venus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="earth.html">earth</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mars.html">mars</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jupiter.html">jupiter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="saturn.html">saturn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="uranus.html">uranus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="neptune.html">neptune</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section 1 -->
+
+  <div class="container">
+
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div id="img-div" class="col-lg-8">
+        <img id="jupiter-img" src="assets/planet-jupiter.svg" alt="jupiter">
+        <img id= "jupiter-geology" src="assets/geology-jupiter.png" alt="jupiter geology">
+      </div>
+      <div class="col-lg-4">
+        <h1>Jupiter</h1>
+        <p id="jupiter-text">Jupiter is the fifth planet from the Sun and the largest in the Solar System. 
+          It is a gas giant with a mass two and a half times that of all the other 
+          planets in the Solar System combined, but less than one-thousandth the mass 
+          of the Sun.</p>
+          <p id="source">Source :<a id="wikipedia-link" href="https://en.wikipedia.org/wiki/Jupiter_(planet)"> Wikipedia </a><img id="source-img" src="assets/icon-source.svg" alt=""></p>
+          <button id="jupiter-btn1"><span class="numbers">01</span> Overview</button>
+          <button id="jupiter-btn2"><span class="numbers">02</span> Internal Structure</button>
+          <button id="jupiter-btn3"><span class="numbers">03</span> Surface Geology</button>
+      </div>
+    </div>
+
+    <!-- Facts Cards -->
+
+    <div id="cards-div">
+      <div class="cards">
+        <p>Rotation Time</p>
+        <h2>9.93 Hours</h2>
+      </div>
+    
+      <div class="cards">
+        <p>Revolution Time</p>
+        <h2>11.86 Years</h2>
+      </div>
+    
+      <div class="cards">
+        <p>Radius</p>
+        <h2>69,911 KM</h2>
+      </div>
+    
+      <div class="cards">
+        <p>Average Temp.</p>
+        <h2>-108°c</h2>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Overview Content Start -->
+
+  <!-- Jupiter is the fifth planet from the Sun and the largest in the Solar System. 
+  It is a gas giant with a mass two and a half times that of all the other 
+  planets in the Solar System combined, but less than one-thousandth the mass 
+  of the Sun.
+
+  Source : Wikipedia URL: https://en.wikipedia.org/wiki/Jupiter -->
+
+  <!-- Overview Content End -->
+
+  <!-- Internal Structure Content Start -->
+
+  <!-- When the Juno arrived in 2016, it found that Jupiter has a very diffuse core 
+  that mixes into its mantle. A possible cause is an impact from a planet of 
+  about ten Earth masses a few million years after Jupiter's formation, which 
+  would have disrupted an originally solid Jovian core.
+
+  Source : Wikipedia URL: https://en.wikipedia.org/wiki/Jupiter#Internal_structure -->
+
+  <!-- Internal Structure Content End -->
+
+  <!-- Surface Geology Content Start -->
+
+  <!-- The best known feature of Jupiter is the Great Red Spot, a persistent 
+  anticyclonic storm located 22° south of the equator. It is known to have 
+  existed since at least 1831, and possibly since 1665.
+
+  Source : Wikipedia URL: https://en.wikipedia.org/wiki/Jupiter#Great_Red_Spot_and_other_vortices -->
+
+  <!-- Surface Geology Content End -->
+
+  <!-- 01 Overview
+  02 Internal Structure
+  03 Surface Geology
+
+  Rotation Time
+  9.93 Hours
+
+  Revolution Time
+  11.86 Years
+
+  Radius
+  69,911 KM
+
+  Average Temp.
+  -108°c -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- Javascript File -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
