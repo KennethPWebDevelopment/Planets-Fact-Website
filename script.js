@@ -197,7 +197,7 @@ let planets = [
 
 // Mercury Buttons
 
-if (window.location.pathname == '/index.html' || window.location.pathname == '/Planets-Fact-Website/index.html') {
+if (window.location.pathname == '/index.html' || window.location.pathname == '/Planets-Fact-Website/index.html' || window.location.pathname == '/Planets-Fact-Website/' ) {
 
     let mercuryBtn1 = document.querySelector("#mercury-btn1");
     let mercuryBtn2 = document.querySelector("#mercury-btn2");
