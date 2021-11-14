@@ -199,88 +199,103 @@ let planets = [
 
 if (window.location.pathname == '/index.html' || window.location.pathname == '/Planets-Fact-Website/index.html' || window.location.pathname == '/Planets-Fact-Website/' ) {
 
-    let mercuryBtn1 = document.querySelector("#mercury-btn1");
-    let mercuryBtn2 = document.querySelector("#mercury-btn2");
-    let mercuryBtn3 = document.querySelector("#mercury-btn3");
+    let mercuryBtn1 = document.querySelectorAll(".mercury-btn-1");
+    let mercuryBtn2 = document.querySelectorAll(".mercury-btn-2");
+    let mercuryBtn3 = document.querySelectorAll(".mercury-btn-3");
     let mercuryImg = document.querySelector("#mercury-img");
     let mercuryText = document.querySelector("#mercury-text");
     let mercuryGeology = document.querySelector("#mercury-geology");
     let wikipediaLink = document.querySelector("#wikipedia-link");
 
-    mercuryBtn1.addEventListener("click", function () {
-        mercuryText.innerHTML = planets[0].overview["content"];
-        mercuryBtn1.style.backgroundColor = "#419EBB";
-        mercuryBtn2.style.backgroundColor = "#070724";
-        mercuryBtn3.style.backgroundColor = "#070724";
-        mercuryImg.src = planets[0].images["planet"]
-        wikipediaLink.href = planets[0].overview["source"];
-        mercuryGeology.style.display = "none";
-    })
 
-    mercuryBtn2.addEventListener("click", function () {
+    for (var i = 0; i < mercuryBtn1.length; i++) {
+      mercuryBtn1[i].addEventListener("click", function() {
+      mercuryText.innerHTML = planets[0].overview["content"];
+      mercuryBtn1[1].style.backgroundColor = "#419EBB";
+      mercuryBtn2[1].style.backgroundColor = "#070724";
+      mercuryBtn3[1].style.backgroundColor = "#070724";
+      mercuryImg.src = planets[0].images["planet"]
+      wikipediaLink.href = planets[0].overview["source"];
+      mercuryGeology.style.display = "none";
+   });
+
+  }
+
+    for (var i = 0; i < mercuryBtn2.length; i++) {
+      mercuryBtn2[i].addEventListener("click", function() {
         mercuryText.innerHTML = planets[0].structure["content"];
-        mercuryBtn1.style.backgroundColor = "#070724";
-        mercuryBtn2.style.backgroundColor = "#419EBB";
-        mercuryBtn3.style.backgroundColor = "#070724";
+        mercuryBtn1[1].style.backgroundColor = "#070724";
+        mercuryBtn2[1].style.backgroundColor = "#419EBB";
+        mercuryBtn3[1].style.backgroundColor = "#070724";
         mercuryImg.src = planets[0].images["internal"];
         wikipediaLink.href = planets[0].structure["source"];
         mercuryGeology.style.display = "none";
-    })
+      });
+   }
 
-    mercuryBtn3.addEventListener("click", function () {
+   for (var i = 0; i < mercuryBtn3.length; i++) {
+      mercuryBtn3[i].addEventListener("click", function() {
         mercuryText.innerHTML = planets[0].geology["content"];
-        mercuryBtn1.style.backgroundColor = "#070724";
-        mercuryBtn2.style.backgroundColor = "#070724";
-        mercuryBtn3.style.backgroundColor = "#419EBB";
+        mercuryBtn1[1].style.backgroundColor = "#070724";
+        mercuryBtn2[1].style.backgroundColor = "#070724";
+        mercuryBtn3[1].style.backgroundColor = "#419EBB";
         mercuryImg.src = planets[0].images["planet"];
         wikipediaLink.href = planets[0].geology["source"];
         mercuryGeology.style.display = "block";
-    })
-
+    });
+ }
+  
 }
 
 // Venus Buttons
 
 if (window.location.pathname == '/venus.html' || window.location.pathname == '/Planets-Fact-Website/venus.html') {
 
-    let venusBtn1 = document.querySelector("#venus-btn1");
-    let venusBtn2 = document.querySelector("#venus-btn2");
-    let venusBtn3 = document.querySelector("#venus-btn3");
-    let venusImg = document.querySelector("#venus-img");
-    let venusText = document.querySelector("#venus-text");
-    let venusGeology = document.querySelector("#venus-geology");
-    let wikipediaLink = document.querySelector("#wikipedia-link");
+  let venusBtn1 = document.querySelectorAll(".venus-btn-1");
+  let venusBtn2 = document.querySelectorAll(".venus-btn-2");
+  let venusBtn3 = document.querySelectorAll(".venus-btn-3");
+  let venusImg = document.querySelector("#venus-img");
+  let venusText = document.querySelector("#venus-text");
+  let venusGeology = document.querySelector("#venus-geology");
+  let wikipediaLink = document.querySelector("#wikipedia-link");
 
 
-    venusBtn1.addEventListener("click", function () {
-        venusText.innerHTML = planets[1].overview["content"];
-        venusBtn1.style.backgroundColor = "#EDA249";
-        venusBtn2.style.backgroundColor = "#070724";
-        venusBtn3.style.backgroundColor = "#070724";
-        venusImg.src = planets[1].images["planet"]
-        wikipediaLink.href = planets[1].overview["source"];
-        venusGeology.style.display = "none";
-    })
+  for (var i = 0; i < venusBtn1.length; i++) {
+    venusBtn1[i].addEventListener("click", function() {
+      venusText.innerHTML = planets[1].overview["content"];
+      venusBtn1[1].style.backgroundColor = "#EDA249";
+      venusBtn2[1].style.backgroundColor = "#070724";
+      venusBtn3[1].style.backgroundColor = "#070724";
+      venusImg.src = planets[1].images["planet"]
+      wikipediaLink.href = planets[1].overview["source"];
+      venusGeology.style.display = "none";
+ });
 
-    venusBtn2.addEventListener("click", function () {
-        venusText.innerHTML = planets[1].structure["content"];
-        venusBtn1.style.backgroundColor = "#070724";
-        venusBtn2.style.backgroundColor = "#EDA249";
-        venusBtn3.style.backgroundColor = "#070724";
-        venusImg.src = planets[1].images["internal"];
-        wikipediaLink.href = planets[1].structure["source"];
-        venusGeology.style.display = "none";
-    })
+}
 
-    venusBtn3.addEventListener("click", function () {
-        venusText.innerHTML = planets[1].geology["content"];
-        venusBtn1.style.backgroundColor = "#070724";
-        venusBtn2.style.backgroundColor = "#070724";
-        venusBtn3.style.backgroundColor = "#EDA249";
-        venusImg.src = planets[1].images["planet"];
-        wikipediaLink.href = planets[1].geology["source"];
-        venusGeology.style.display = "block";
-    })
+  for (var i = 0; i < venusBtn2.length; i++) {
+    venusBtn2[i].addEventListener("click", function() {
+      venusText.innerHTML = planets[1].structure["content"];
+      venusBtn1[1].style.backgroundColor = "#070724";
+      venusBtn2[1].style.backgroundColor = "#EDA249";
+      venusBtn3[1].style.backgroundColor = "#070724";
+      venusImg.src = planets[1].images["internal"];
+      wikipediaLink.href = planets[1].structure["source"];
+      venusGeology.style.display = "none";
+    });
+ }
+
+ for (var i = 0; i < venusBtn3.length; i++) {
+  venusBtn3[i].addEventListener("click", function() {
+    venusText.innerHTML = planets[1].geology["content"];
+    venusBtn1[1].style.backgroundColor = "#070724";
+    venusBtn2[1].style.backgroundColor = "#070724";
+    venusBtn3[1].style.backgroundColor = "#EDA249";
+    venusImg.src = planets[1].images["planet"];
+      wikipediaLink.href = planets[1].geology["source"];
+      venusGeology.style.display = "block";
+  });
+}
 
 }
 
@@ -288,44 +303,51 @@ if (window.location.pathname == '/venus.html' || window.location.pathname == '/P
 
 if (window.location.pathname == '/earth.html' || window.location.pathname == '/Planets-Fact-Website/earth.html') {
 
-    let earthBtn1 = document.querySelector("#earth-btn1");
-    let earthBtn2 = document.querySelector("#earth-btn2");
-    let earthBtn3 = document.querySelector("#earth-btn3");
-    let earthImg = document.querySelector("#earth-img");
-    let earthText = document.querySelector("#earth-text");
-    let earthGeology = document.querySelector("#earth-geology");
-    let wikipediaLink = document.querySelector("#wikipedia-link");
+  let earthBtn1 = document.querySelectorAll(".earth-btn-1");
+  let earthBtn2 = document.querySelectorAll(".earth-btn-2");
+  let earthBtn3 = document.querySelectorAll(".earth-btn-3");
+  let earthImg = document.querySelector("#earth-img");
+  let earthText = document.querySelector("#earth-text");
+  let earthGeology = document.querySelector("#earth-geology");
+  let wikipediaLink = document.querySelector("#wikipedia-link");
 
 
-    earthBtn1.addEventListener("click", function () {
-        earthText.innerHTML = planets[2].overview["content"];
-        earthBtn1.style.backgroundColor = "#6f2ed6";
-        earthBtn2.style.backgroundColor = "#070724";
-        earthBtn3.style.backgroundColor = "#070724";
-        earthImg.src = planets[2].images["planet"]
-        wikipediaLink.href = planets[2].overview["source"];
-        earthGeology.style.display = "none";
-    })
+  for (var i = 0; i < earthBtn1.length; i++) {
+    earthBtn1[i].addEventListener("click", function() {
+      earthText.innerHTML = planets[2].overview["content"];
+      earthBtn1[1].style.backgroundColor = "#6D2ED5";
+      earthBtn2[1].style.backgroundColor = "#070724";
+      earthBtn3[1].style.backgroundColor = "#070724";
+      earthImg.src = planets[2].images["planet"]
+      wikipediaLink.href = planets[2].overview["source"];
+      earthGeology.style.display = "none";
+ });
 
-    earthBtn2.addEventListener("click", function () {
-        earthText.innerHTML = planets[2].structure["content"];
-        earthBtn1.style.backgroundColor = "#070724";
-        earthBtn2.style.backgroundColor = "#6f2ed6";
-        earthBtn3.style.backgroundColor = "#070724";
-        earthImg.src = planets[2].images["internal"];
-        wikipediaLink.href = planets[2].structure["source"];
-        earthGeology.style.display = "none";
-    })
+}
 
-    earthBtn3.addEventListener("click", function () {
-        earthText.innerHTML = planets[2].geology["content"];
-        earthBtn1.style.backgroundColor = "#070724";
-        earthBtn2.style.backgroundColor = "#070724";
-        earthBtn3.style.backgroundColor = "#6f2ed6";
-        earthImg.src = planets[2].images["planet"];
-        wikipediaLink.href = planets[2].geology["source"];
-        earthGeology.style.display = "block";
-    })
+  for (var i = 0; i < earthBtn2.length; i++) {
+    earthBtn2[i].addEventListener("click", function() {
+      earthText.innerHTML = planets[2].structure["content"];
+      earthBtn1[1].style.backgroundColor = "#070724";
+      earthBtn2[1].style.backgroundColor = "#6D2ED5";
+      earthBtn3[1].style.backgroundColor = "#070724";
+      earthImg.src = planets[2].images["internal"];
+      wikipediaLink.href = planets[2].structure["source"];
+      earthGeology.style.display = "none";
+    });
+ }
+
+ for (var i = 0; i < earthBtn3.length; i++) {
+  earthBtn3[i].addEventListener("click", function() {
+    earthText.innerHTML = planets[2].geology["content"];
+    earthBtn1[1].style.backgroundColor = "#070724";
+    earthBtn2[1].style.backgroundColor = "#070724";
+    earthBtn3[1].style.backgroundColor = "#6D2ED5";
+    earthImg.src = planets[2].images["planet"];
+      wikipediaLink.href = planets[2].geology["source"];
+      earthGeology.style.display = "block";
+  });
+}
 
 }
 
@@ -333,44 +355,51 @@ if (window.location.pathname == '/earth.html' || window.location.pathname == '/P
 
 if (window.location.pathname == '/mars.html' || window.location.pathname == '/Planets-Fact-Website/mars.html') {
 
-    let marsBtn1 = document.querySelector("#mars-btn1");
-    let marsBtn2 = document.querySelector("#mars-btn2");
-    let marsBtn3 = document.querySelector("#mars-btn3");
-    let marsImg = document.querySelector("#mars-img");
-    let marsText = document.querySelector("#mars-text");
-    let marsGeology = document.querySelector("#mars-geology");
-    let wikipediaLink = document.querySelector("#wikipedia-link");
+  let marsBtn1 = document.querySelectorAll(".mars-btn-1");
+  let marsBtn2 = document.querySelectorAll(".mars-btn-2");
+  let marsBtn3 = document.querySelectorAll(".mars-btn-3");
+  let marsImg = document.querySelector("#mars-img");
+  let marsText = document.querySelector("#mars-text");
+  let marsGeology = document.querySelector("#mars-geology");
+  let wikipediaLink = document.querySelector("#wikipedia-link");
 
 
-    marsBtn1.addEventListener("click", function () {
-        marsText.innerHTML = planets[3].overview["content"];
-        marsBtn1.style.backgroundColor = "#CD5120";
-        marsBtn2.style.backgroundColor = "#070724";
-        marsBtn3.style.backgroundColor = "#070724";
-        marsImg.src = planets[3].images["planet"]
-        wikipediaLink.href = planets[3].overview["source"];
-        marsGeology.style.display = "none";
-    })
+  for (var i = 0; i < marsBtn1.length; i++) {
+    marsBtn1[i].addEventListener("click", function() {
+      marsText.innerHTML = planets[3].overview["content"];
+      marsBtn1[1].style.backgroundColor = "#D14C32";
+      marsBtn2[1].style.backgroundColor = "#070724";
+      marsBtn3[1].style.backgroundColor = "#070724";
+      marsImg.src = planets[3].images["planet"]
+      wikipediaLink.href = planets[3].overview["source"];
+      marsGeology.style.display = "none";
+ });
 
-    marsBtn2.addEventListener("click", function () {
-        marsText.innerHTML = planets[3].structure["content"];
-        marsBtn1.style.backgroundColor = "#070724";
-        marsBtn2.style.backgroundColor = "#CD5120";
-        marsBtn3.style.backgroundColor = "#070724";
-        marsImg.src = planets[3].images["internal"];
-        wikipediaLink.href = planets[3].structure["source"];
-        marsGeology.style.display = "none";
-    })
+}
 
-    marsBtn3.addEventListener("click", function () {
-        marsText.innerHTML = planets[3].geology["content"];
-        marsBtn1.style.backgroundColor = "#070724";
-        marsBtn2.style.backgroundColor = "#070724";
-        marsBtn3.style.backgroundColor = "#CD5120";
-        marsImg.src = planets[3].images["planet"];
-        wikipediaLink.href = planets[3].geology["source"];
-        marsGeology.style.display = "block";
-    })
+  for (var i = 0; i < marsBtn2.length; i++) {
+    marsBtn2[i].addEventListener("click", function() {
+      marsText.innerHTML = planets[3].structure["content"];
+      marsBtn1[1].style.backgroundColor = "#070724";
+      marsBtn2[1].style.backgroundColor = "#D14C32";
+      marsBtn3[1].style.backgroundColor = "#070724";
+      marsImg.src = planets[3].images["internal"];
+      wikipediaLink.href = planets[3].structure["source"];
+      marsGeology.style.display = "none";
+    });
+ }
+
+ for (var i = 0; i < marsBtn3.length; i++) {
+  marsBtn3[i].addEventListener("click", function() {
+    marsText.innerHTML = planets[3].geology["content"];
+    marsBtn1[1].style.backgroundColor = "#070724";
+    marsBtn2[1].style.backgroundColor = "#070724";
+    marsBtn3[1].style.backgroundColor = "#D14C32";
+    marsImg.src = planets[3].images["planet"];
+      wikipediaLink.href = planets[3].geology["source"];
+      marsGeology.style.display = "block";
+  });
+}
 
 }
 
@@ -378,44 +407,51 @@ if (window.location.pathname == '/mars.html' || window.location.pathname == '/Pl
 
 if (window.location.pathname == '/jupiter.html' || window.location.pathname == '/Planets-Fact-Website/jupiter.html') {
 
-    let jupiterBtn1 = document.querySelector("#jupiter-btn1");
-    let jupiterBtn2 = document.querySelector("#jupiter-btn2");
-    let jupiterBtn3 = document.querySelector("#jupiter-btn3");
-    let jupiterImg = document.querySelector("#jupiter-img");
-    let jupiterText = document.querySelector("#jupiter-text");
-    let jupiterGeology = document.querySelector("#jupiter-geology");
-    let wikipediaLink = document.querySelector("#wikipedia-link");
+  let jupiterBtn1 = document.querySelectorAll(".jupiter-btn-1");
+  let jupiterBtn2 = document.querySelectorAll(".jupiter-btn-2");
+  let jupiterBtn3 = document.querySelectorAll(".jupiter-btn-3");
+  let jupiterImg = document.querySelector("#jupiter-img");
+  let jupiterText = document.querySelector("#jupiter-text");
+  let jupiterGeology = document.querySelector("#jupiter-geology");
+  let wikipediaLink = document.querySelector("#wikipedia-link");
 
 
-    jupiterBtn1.addEventListener("click", function () {
-        jupiterText.innerHTML = planets[4].overview["content"];
-        jupiterBtn1.style.backgroundColor = "#D83A34";
-        jupiterBtn2.style.backgroundColor = "#070724";
-        jupiterBtn3.style.backgroundColor = "#070724";
-        jupiterImg.src = planets[4].images["planet"]
-        wikipediaLink.href = planets[4].overview["source"];
-        jupiterGeology.style.display = "none";
-    })
+  for (var i = 0; i < jupiterBtn1.length; i++) {
+    jupiterBtn1[i].addEventListener("click", function() {
+      jupiterText.innerHTML = planets[4].overview["content"];
+      jupiterBtn1[1].style.backgroundColor = "#D14C32";
+      jupiterBtn2[1].style.backgroundColor = "#070724";
+      jupiterBtn3[1].style.backgroundColor = "#070724";
+      jupiterImg.src = planets[4].images["planet"]
+      wikipediaLink.href = planets[4].overview["source"];
+      jupiterGeology.style.display = "none";
+ });
 
-    jupiterBtn2.addEventListener("click", function () {
-        jupiterText.innerHTML = planets[4].structure["content"];
-        jupiterBtn1.style.backgroundColor = "#070724";
-        jupiterBtn2.style.backgroundColor = "#D83A34";
-        jupiterBtn3.style.backgroundColor = "#070724";
-        jupiterImg.src = planets[4].images["internal"];
-        wikipediaLink.href = planets[4].structure["source"];
-        jupiterGeology.style.display = "none";
-    })
+}
 
-    jupiterBtn3.addEventListener("click", function () {
-        jupiterText.innerHTML = planets[4].geology["content"];
-        jupiterBtn1.style.backgroundColor = "#070724";
-        jupiterBtn2.style.backgroundColor = "#070724";
-        jupiterBtn3.style.backgroundColor = "#D83A34";
-        jupiterImg.src = planets[4].images["planet"];
-        wikipediaLink.href = planets[4].geology["source"];
-        jupiterGeology.style.display = "block";
-    })
+  for (var i = 0; i < jupiterBtn2.length; i++) {
+    jupiterBtn2[i].addEventListener("click", function() {
+      jupiterText.innerHTML = planets[4].structure["content"];
+      jupiterBtn1[1].style.backgroundColor = "#070724";
+      jupiterBtn2[1].style.backgroundColor = "#D14C32";
+      jupiterBtn3[1].style.backgroundColor = "#070724";
+      jupiterImg.src = planets[4].images["internal"];
+      wikipediaLink.href = planets[4].structure["source"];
+      jupiterGeology.style.display = "none";
+    });
+ }
+
+ for (var i = 0; i < jupiterBtn3.length; i++) {
+  jupiterBtn3[i].addEventListener("click", function() {
+    jupiterText.innerHTML = planets[4].geology["content"];
+    jupiterBtn1[1].style.backgroundColor = "#070724";
+    jupiterBtn2[1].style.backgroundColor = "#070724";
+    jupiterBtn3[1].style.backgroundColor = "#D14C32";
+    jupiterImg.src = planets[4].images["planet"];
+      wikipediaLink.href = planets[4].geology["source"];
+      jupiterGeology.style.display = "block";
+  });
+}
 
 }
 
@@ -423,44 +459,51 @@ if (window.location.pathname == '/jupiter.html' || window.location.pathname == '
 
 if (window.location.pathname == '/saturn.html' || window.location.pathname == '/Planets-Fact-Website/saturn.html') {
 
-    let saturnBtn1 = document.querySelector("#saturn-btn1");
-    let saturnBtn2 = document.querySelector("#saturn-btn2");
-    let saturnBtn3 = document.querySelector("#saturn-btn3");
-    let saturnImg = document.querySelector("#saturn-img");
-    let saturnText = document.querySelector("#saturn-text");
-    let saturnGeology = document.querySelector("#saturn-geology");
-    let wikipediaLink = document.querySelector("#wikipedia-link");
+  let saturnBtn1 = document.querySelectorAll(".saturn-btn-1");
+  let saturnBtn2 = document.querySelectorAll(".saturn-btn-2");
+  let saturnBtn3 = document.querySelectorAll(".saturn-btn-3");
+  let saturnImg = document.querySelector("#saturn-img");
+  let saturnText = document.querySelector("#saturn-text");
+  let saturnGeology = document.querySelector("#saturn-geology");
+  let wikipediaLink = document.querySelector("#wikipedia-link");
 
 
-    saturnBtn1.addEventListener("click", function () {
-        saturnText.innerHTML = planets[5].overview["content"];
-        saturnBtn1.style.backgroundColor = "#D14C32";
-        saturnBtn2.style.backgroundColor = "#070724";
-        saturnBtn3.style.backgroundColor = "#070724";
-        saturnImg.src = planets[5].images["planet"]
-        wikipediaLink.href = planets[5].overview["source"];
-        saturnGeology.style.display = "none";
-    })
+  for (var i = 0; i < saturnBtn1.length; i++) {
+    saturnBtn1[i].addEventListener("click", function() {
+      saturnText.innerHTML = planets[5].overview["content"];
+      saturnBtn1[1].style.backgroundColor = "#CD5120";
+      saturnBtn2[1].style.backgroundColor = "#070724";
+      saturnBtn3[1].style.backgroundColor = "#070724";
+      saturnImg.src = planets[5].images["planet"]
+      wikipediaLink.href = planets[5].overview["source"];
+      saturnGeology.style.display = "none";
+ });
 
-    saturnBtn2.addEventListener("click", function () {
-        saturnText.innerHTML = planets[5].structure["content"];
-        saturnBtn1.style.backgroundColor = "#070724";
-        saturnBtn2.style.backgroundColor = "#D14C32";
-        saturnBtn3.style.backgroundColor = "#070724";
-        saturnImg.src = planets[5].images["internal"];
-        wikipediaLink.href = planets[5].structure["source"];
-        saturnGeology.style.display = "none";
-    })
+}
 
-    saturnBtn3.addEventListener("click", function () {
-        saturnText.innerHTML = planets[5].geology["content"];
-        saturnBtn1.style.backgroundColor = "#070724";
-        saturnBtn2.style.backgroundColor = "#070724";
-        saturnBtn3.style.backgroundColor = "#D14C32";
-        saturnImg.src = planets[5].images["planet"];
-        wikipediaLink.href = planets[5].geology["source"];
-        saturnGeology.style.display = "block";
-    })
+  for (var i = 0; i < saturnBtn2.length; i++) {
+    saturnBtn2[i].addEventListener("click", function() {
+      saturnText.innerHTML = planets[5].structure["content"];
+      saturnBtn1[1].style.backgroundColor = "#070724";
+      saturnBtn2[1].style.backgroundColor = "#CD5120";
+      saturnBtn3[1].style.backgroundColor = "#070724";
+      saturnImg.src = planets[5].images["internal"];
+      wikipediaLink.href = planets[5].structure["source"];
+      saturnGeology.style.display = "none";
+    });
+ }
+
+ for (var i = 0; i < saturnBtn3.length; i++) {
+  saturnBtn3[i].addEventListener("click", function() {
+    saturnText.innerHTML = planets[5].geology["content"];
+    saturnBtn1[1].style.backgroundColor = "#070724";
+    saturnBtn2[1].style.backgroundColor = "#070724";
+    saturnBtn3[1].style.backgroundColor = "#CD5120";
+    saturnImg.src = planets[5].images["planet"];
+      wikipediaLink.href = planets[5].geology["source"];
+      saturnGeology.style.display = "block";
+  });
+}
 
 }
 
@@ -468,44 +511,51 @@ if (window.location.pathname == '/saturn.html' || window.location.pathname == '/
 
 if (window.location.pathname == '/uranus.html' || window.location.pathname == '/Planets-Fact-Website/uranus.html') {
 
-    let uranusBtn1 = document.querySelector("#uranus-btn1");
-    let uranusBtn2 = document.querySelector("#uranus-btn2");
-    let uranusBtn3 = document.querySelector("#uranus-btn3");
-    let uranusImg = document.querySelector("#uranus-img");
-    let uranusText = document.querySelector("#uranus-text");
-    let uranusGeology = document.querySelector("#uranus-geology");
-    let wikipediaLink = document.querySelector("#wikipedia-link");
+  let uranusBtn1 = document.querySelectorAll(".uranus-btn-1");
+  let uranusBtn2 = document.querySelectorAll(".uranus-btn-2");
+  let uranusBtn3 = document.querySelectorAll(".uranus-btn-3");
+  let uranusImg = document.querySelector("#uranus-img");
+  let uranusText = document.querySelector("#uranus-text");
+  let uranusGeology = document.querySelector("#uranus-geology");
+  let wikipediaLink = document.querySelector("#wikipedia-link");
 
 
-    uranusBtn1.addEventListener("click", function () {
-        uranusText.innerHTML = planets[6].overview["content"];
-        uranusBtn1.style.backgroundColor = "#1EC2A4";
-        uranusBtn2.style.backgroundColor = "#070724";
-        uranusBtn3.style.backgroundColor = "#070724";
-        uranusImg.src = planets[6].images["planet"]
-        wikipediaLink.href = planets[6].overview["source"];
-        uranusGeology.style.display = "none";
-    })
+  for (var i = 0; i < uranusBtn1.length; i++) {
+    uranusBtn1[i].addEventListener("click", function() {
+      uranusText.innerHTML = planets[6].overview["content"];
+      uranusBtn1[1].style.backgroundColor = "#1EC1A2";
+      uranusBtn2[1].style.backgroundColor = "#070724";
+      uranusBtn3[1].style.backgroundColor = "#070724";
+      uranusImg.src = planets[6].images["planet"]
+      wikipediaLink.href = planets[6].overview["source"];
+      uranusGeology.style.display = "none";
+ });
 
-    uranusBtn2.addEventListener("click", function () {
-        uranusText.innerHTML = planets[6].structure["content"];
-        uranusBtn1.style.backgroundColor = "#070724";
-        uranusBtn2.style.backgroundColor = "#1EC2A4";
-        uranusBtn3.style.backgroundColor = "#070724";
-        uranusImg.src = planets[6].images["internal"];
-        wikipediaLink.href = planets[6].structure["source"];
-        uranusGeology.style.display = "none";
-    })
+}
 
-    uranusBtn3.addEventListener("click", function () {
-        uranusText.innerHTML = planets[6].geology["content"];
-        uranusBtn1.style.backgroundColor = "#070724";
-        uranusBtn2.style.backgroundColor = "#070724";
-        uranusBtn3.style.backgroundColor = "#1EC2A4";
-        uranusImg.src = planets[6].images["planet"];
-        wikipediaLink.href = planets[6].geology["source"];
-        uranusGeology.style.display = "block";
-    })
+  for (var i = 0; i < uranusBtn2.length; i++) {
+    uranusBtn2[i].addEventListener("click", function() {
+      uranusText.innerHTML = planets[6].structure["content"];
+      uranusBtn1[1].style.backgroundColor = "#070724";
+      uranusBtn2[1].style.backgroundColor = "#1EC1A2";
+      uranusBtn3[1].style.backgroundColor = "#070724";
+      uranusImg.src = planets[6].images["internal"];
+      wikipediaLink.href = planets[6].structure["source"];
+      uranusGeology.style.display = "none";
+    });
+ }
+
+ for (var i = 0; i < uranusBtn3.length; i++) {
+  uranusBtn3[i].addEventListener("click", function() {
+    uranusText.innerHTML = planets[6].geology["content"];
+    uranusBtn1[1].style.backgroundColor = "#070724";
+    uranusBtn2[1].style.backgroundColor = "#070724";
+    uranusBtn3[1].style.backgroundColor = "#1EC1A2";
+    uranusImg.src = planets[6].images["planet"];
+      wikipediaLink.href = planets[6].geology["source"];
+      uranusGeology.style.display = "block";
+  });
+}
 
 }
 
@@ -513,43 +563,50 @@ if (window.location.pathname == '/uranus.html' || window.location.pathname == '/
 
 if (window.location.pathname == '/neptune.html' || window.location.pathname == '/Planets-Fact-Website/neptune.html') {
 
-    let neptuneBtn1 = document.querySelector("#neptune-btn1");
-    let neptuneBtn2 = document.querySelector("#neptune-btn2");
-    let neptuneBtn3 = document.querySelector("#neptune-btn3");
-    let neptuneImg = document.querySelector("#neptune-img");
-    let neptuneText = document.querySelector("#neptune-text");
-    let neptuneGeology = document.querySelector("#neptune-geology");
-    let wikipediaLink = document.querySelector("#wikipedia-link");
+  let neptuneBtn1 = document.querySelectorAll(".neptune-btn-1");
+  let neptuneBtn2 = document.querySelectorAll(".neptune-btn-2");
+  let neptuneBtn3 = document.querySelectorAll(".neptune-btn-3");
+  let neptuneImg = document.querySelector("#neptune-img");
+  let neptuneText = document.querySelector("#neptune-text");
+  let neptuneGeology = document.querySelector("#neptune-geology");
+  let wikipediaLink = document.querySelector("#wikipedia-link");
 
 
-    neptuneBtn1.addEventListener("click", function () {
-        neptuneText.innerHTML = planets[7].overview["content"];
-        neptuneBtn1.style.backgroundColor = "#2D68F0";
-        neptuneBtn2.style.backgroundColor = "#070724";
-        neptuneBtn3.style.backgroundColor = "#070724";
-        neptuneImg.src = planets[7].images["planet"]
-        wikipediaLink.href = planets[7].overview["source"];
-        neptuneGeology.style.display = "none";
-    })
+  for (var i = 0; i < neptuneBtn1.length; i++) {
+    neptuneBtn1[i].addEventListener("click", function() {
+      neptuneText.innerHTML = planets[7].overview["content"];
+      neptuneBtn1[1].style.backgroundColor = "#2D68F0";
+      neptuneBtn2[1].style.backgroundColor = "#070724";
+      neptuneBtn3[1].style.backgroundColor = "#070724";
+      neptuneImg.src = planets[7].images["planet"]
+      wikipediaLink.href = planets[7].overview["source"];
+      neptuneGeology.style.display = "none";
+ });
 
-    neptuneBtn2.addEventListener("click", function () {
-        neptuneText.innerHTML = planets[7].structure["content"];
-        neptuneBtn1.style.backgroundColor = "#070724";
-        neptuneBtn2.style.backgroundColor = "#2D68F0";
-        neptuneBtn3.style.backgroundColor = "#070724";
-        neptuneImg.src = planets[7].images["internal"];
-        wikipediaLink.href = planets[7].structure["source"];
-        neptuneGeology.style.display = "none";
-    })
+}
 
-    neptuneBtn3.addEventListener("click", function () {
-        neptuneText.innerHTML = planets[7].geology["content"];
-        neptuneBtn1.style.backgroundColor = "#070724";
-        neptuneBtn2.style.backgroundColor = "#070724";
-        neptuneBtn3.style.backgroundColor = "#2D68F0";
-        neptuneImg.src = planets[7].images["planet"];
-        wikipediaLink.href = planets[7].geology["source"];
-        neptuneGeology.style.display = "block";
-    })
+  for (var i = 0; i < neptuneBtn2.length; i++) {
+    neptuneBtn2[i].addEventListener("click", function() {
+      neptuneText.innerHTML = planets[7].structure["content"];
+      neptuneBtn1[1].style.backgroundColor = "#070724";
+      neptuneBtn2[1].style.backgroundColor = "#2D68F0";
+      neptuneBtn3[1].style.backgroundColor = "#070724";
+      neptuneImg.src = planets[7].images["internal"];
+      wikipediaLink.href = planets[7].structure["source"];
+      neptuneGeology.style.display = "none";
+    });
+ }
+
+ for (var i = 0; i < neptuneBtn3.length; i++) {
+  neptuneBtn3[i].addEventListener("click", function() {
+    neptuneText.innerHTML = planets[7].geology["content"];
+    neptuneBtn1[1].style.backgroundColor = "#070724";
+    neptuneBtn2[1].style.backgroundColor = "#070724";
+    neptuneBtn3[1].style.backgroundColor = "#2D68F0";
+    neptuneImg.src = planets[7].images["planet"];
+      wikipediaLink.href = planets[7].geology["source"];
+      neptuneGeology.style.display = "block";
+  });
+}
 
 };
